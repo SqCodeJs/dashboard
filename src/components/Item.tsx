@@ -26,10 +26,11 @@ export default async function Item({ task }: { task: Task; }) {
                     {status}
                 </span>
             </td>
-            <td className='border p-2'>            <div className="flex items-center">
-                <span className="mr-2 bg-zinc-900 border-slate-600 text-slate-600 text-xs border rounded-full w-6 h-6 flex justify-center items-center">{user?.username.charAt(0).toUpperCase()}</span>
-                <span className="text-xs my-1 py-1">{user?.username}</span>
-            </div></td>
+            <td className='border p-2'>
+                <div className="flex items-center">
+                    <span className="mr-2 bg-zinc-900 border-slate-600 text-slate-600 text-xs border rounded-full w-6 h-6 flex justify-center items-center">{user?.username.charAt(0).toUpperCase()}</span>
+                    <span className="text-xs my-1 py-1">{user?.username}</span>
+                </div></td>
             <td className={`border p-2`}>
                 <span className={`text-xs text-slate-100 inline-block p-2 rounded ${priorityColors[priority]}`}>
                     {priority}
